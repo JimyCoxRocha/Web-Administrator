@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Web Administrator</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html"><img src="Iconos/logo.png" alt="Logo Web Administrator"></a>
+        </div>
+        <nav class="barra">
+
+            <div class="contenedor">
+                
+                    <label for="trigger" id="palanca" class="centrar-texto"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="trigger">
+                    
+                <ul class="opciones">
+                    <li class="centrar-texto"><a href="#">Publicar</a></li>
+                    <li class="centrar-texto"><a href="administrar.html">Administrar</a></li>
+                </ul>
+
+                <div class="perfil">
+                    <div class="usuario">
+                        <i class="fas fa-cog"></i>
+                        <img src="img/user.jpg" alt="usuario">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="centrar-texto">Administrar Blog</h1>
+        <div class="card-unTitulo">
+            <h3 class="centrar-texto">Seleccione el Blog</h3>
+        </div>
+        <div class="borde-corte">
+            <ul class="card">
+                <li class="opcion-card opcion-seleccion">
+                    <div class="opcion-unTitulo"><!---Ya hablo de este tema-->
+                        <h4>Blog sobre Latacunga</h4>
+                        <div class="seleccion-administracion"><i class="far fa-check"></i></div>
+                    </div>
+                    <!--Contenido de la opcion-->
+                    <div class="contenido-blog">
+                            <img src="img/latacunga.jpg" alt="imagen-latacunga">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, quam, nam, 
+                            aliquid quisquam sapiente dolore ea minus a voluptatum doloribus quae 
+                            tempore quo in accusantium? Reprehenderit commodi dolorem non laudantium!</p>
+                    </div>
+                </li>
+
+                <li class="opcion-card opcion-seleccion">
+                    <div class="opcion-unTitulo"><!---Ya hablo de este tema-->
+                        <h4>Blog sobre Latacunga</h4>
+                    </div>
+                    <!--Contenido de la opcion-->
+                    <div class="contenido-blog">
+                            <img src="img/latacunga.jpg" alt="imagen-latacunga">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, quam, nam, 
+                            aliquid quisquam sapiente dolore ea minus a voluptatum doloribus quae 
+                            tempore quo in accusantium? Reprehenderit commodi dolorem non laudantium!</p>
+                    </div>
+                </li>
+
+                <li class="opcion-card opcion-seleccion">
+                    <div class="opcion-unTitulo"><!---Ya hablo de este tema-->
+                        <h4>Blog sobre Latacunga</h4>
+                    </div>
+                    <!--Contenido de la opcion-->
+                    <div class="contenido-blog">
+                            <img src="img/latacunga.jpg" alt="imagen-latacunga">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, quam, nam, 
+                            aliquid quisquam sapiente dolore ea minus a voluptatum doloribus quae 
+                            tempore quo in accusantium? Reprehenderit commodi dolorem non laudantium!</p>
+                    </div>
+                </li>
+
+                <li class="opcion-card opcion-seleccion">
+                    <div class="opcion-unTitulo"><!---Ya hablo de este tema-->
+                        <h4>Blog sobre Latacunga</h4>
+                    </div>
+                    <!--Contenido de la opcion-->
+                    <div class="contenido-blog">
+                            <img src="img/latacunga.jpg" alt="imagen-latacunga">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, quam, nam, 
+                            aliquid quisquam sapiente dolore ea minus a voluptatum doloribus quae 
+                            tempore quo in accusantium? Reprehenderit commodi dolorem non laudantium!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="contenedor">
+        <div class="card-dosTitulo sub-opciones">
+            <h3 class="centrar-texto">Editar</h3>
+            <h3 class="centrar-texto">Eliminar / Ocultar</h3>
+        </div>
+
+        <!--Formulario de edición-->
+        <form action="" class="formulario-edicion">
+            <div class="contenido-flexible">
+                <div class="subtitulo">
+                    <label class="centrar-texto" for="categoria">Categoría</label>
+                </div>
+                <select name="categoria" id="categoria">
+                    <option value="" >-- Seleccione --</option>
+                    <option value="1">Portada</option>
+                    <option value="2">Ecuador</option>
+                    <option value="3">Internacional</option>
+                    <option value="4">Video</option>
+                    <option value="5">Persona</option>
+                </select>
+            </div>
+            
+            <div class="contenido-flexible">
+                <div class="subtitulo imagen-texto">
+                    <label class="centrar-texto">Imagen Portada</label>
+                </div>
+                <label class="centrar-texto" for="imagen" id="boton-subir"><img src="Iconos/upload.png" alt="subir"></label>
+                <input type="file" id="imagen" name="imagen" value=""></input>
+            </div>
+            
+            <div class="contenedor-titulo">
+                <div class="subtitulo">
+                    <label class="centrar-texto" for="titulo">Título</label>
+                </div>
+                <input type="text" id="titulo">
+            </div>
+
+            <div class="contenido-flexible contenedor-estilos">
+                <dl class="contenido-flexible">
+                    <dt><i class="fal fa-font"></i></dt>
+                    <dt><i class="fal fa-italic"></i></dt>
+                    <dt><i class="fas fa-bold"></i></dt>
+                </dl>
+
+                <dl class="contenido-flexible">
+                    <dt><i class="fas fa-align-justify"></i></dt>
+                    <dt><i class="fas fa-align-center"></i></dt>
+                    <dt><i class="fas fa-align-right"></i></dt>
+                    <dt><i class="fas fa-align-left"></i></dt>
+                </dl>
+
+                <dl class="contenido-flexible">
+                    <dt><i class="fas fa-list-ul"></i></dt>
+                </dl>
+            </div>
+
+            <textarea name="contenido" id="contenido"  rows="30"></textarea>
+
+            <div class="contenido-flexible botones">
+                <a href="index.html" class="boton">Cancelar</a>
+                <a href="preview.html" class="boton">Preview</a>
+                <input type="submit" value="Publicar" class="boton">
+            </div>
+        </form>
+
+        <!--Ocultar el blog o eliminar-->
+        <div class="card-unTitulo">
+            <h3 class="centrar-texto">Seleccione el Blog</h3>
+        </div>
+        <div class="borde-corte">
+            <ul class="card">
+                <li class="opcion-card opcion-seleccion">
+                    <div class="opcion-unTitulo"><!---Ya hablo de este tema-->
+                        <h4>Blog sobre Latacunga</h4>
+                        <div class="eliminar-administracion"><i class="far fa-times"></i></div>
+                        <div class="ocultar-administracion"><i class="fal fa-eye-slash"></i></div>
+                    </div>
+                    <!--Contenido de la opcion-->
+                    <div class="contenido-blog">
+                            <img src="img/latacunga.jpg" alt="imagen-latacunga">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, quam, nam, 
+                            aliquid quisquam sapiente dolore ea minus a voluptatum doloribus quae 
+                            tempore quo in accusantium? Reprehenderit commodi dolorem non laudantium!</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="contenido-flexible botones">
+            <a href="index.html" class="boton">Cancelar</a>
+            <a href="index.html" class="boton">Aceptar</a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <ul class="informacion">
+                <li><a href="">Acerca del autor</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Manuales</a></li>
+            </ul>
+            
+            <ul class="redes-sociales">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+            </ul>
+            
+            
+        </div>
+        <div class="barra-footer">
+            <p class="centrar-texto">Todos los Derechos Reservados a Jimy Cox</p>
+        </div>
+    </footer>
+</body>
+</html>
