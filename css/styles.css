@@ -170,12 +170,9 @@ a{
     padding: 1rem;
     background-color: #82828236;
 }
-/***Resumen contenido***/
-.resumen section:last-of-type{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+.contenido-flexible{
+    display: flex;
 }
-
 .subtitulo{
     padding:1rem 2rem;
     border: 1px solid var(--color-bordes);
@@ -183,9 +180,25 @@ a{
     display: inline-block;
 }
 
-.contenido-flexible{
-    display: flex;
+/***Resumen contenido***/
+.resumen section:last-of-type{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
+
+@media (min-width: 768px) {
+    .resumen{
+        display: flex;
+        justify-content: space-between;
+    }
+    .resumen section{
+        flex-basis: calc(50% - 1rem);
+    }
+    .resumen section:last-of-type{
+        margin: 0rem;
+    }
+}
+
 /***Header***/
 header a{
     display: block;
@@ -214,7 +227,20 @@ header a{
 .informacion a:hover{
     color: #D1D1D1;
 }
-
+@media (min-width: 768px) {
+    .site-footer .contenedor{
+        display: flex;
+        justify-content: space-between;
+    }
+    .informacion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2rem;
+    }
+    .informacion li{
+        text-align: left;
+    }
+}
 .redes-sociales{
     margin-top: 2rem;
     display: flex;
@@ -259,6 +285,19 @@ header .contenedor{
     max-height: 0rem;
     transition: max-height 1s;
     overflow: hidden;
+}
+@media (min-width: 768px) {
+    .opciones{
+        max-height: unset;
+        display: flex;
+    }
+    .opciones li a{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #palanca{
+        display: none!important;
+    }
 }
 .opciones li{
     font-size: 2.5rem;
@@ -494,6 +533,15 @@ form input{
     color: var(--color-letrasBody);
     height: 4.7rem;
 }
+@media (min-width: 768px) {
+    .contenedor-titulo{
+        display: flex;
+    }
+    .contenedor-titulo .subtitulo{
+        margin-bottom: 0rem;
+        margin-right: 1rem;
+    }
+}
 .formulario-edicion > div{
     margin-bottom: 3rem;
 }
@@ -580,7 +628,20 @@ form select:hover{
     cursor: pointer;
     background-color: #d1d1d171;
 }
-
+@media (min-width: 768px) {
+    .administrar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1.5rem;
+    }
+    .card.administrar > li:first-of-type,
+    .card.administrar > li:nth-child(2){
+        margin-top: 1.5rem;
+    }
+    .card.administrar > li{
+        margin-bottom: 1.5rem;
+    }
+}
 /*opciones*/
 .sub-opciones{
     border-bottom: 1px solid var(--color-bordes);
@@ -667,4 +728,19 @@ form select:hover{
 .contenedor-muestra p{
     color: rgb(238, 238, 238);
     margin: 1rem 0.6rem;
+}
+
+/**Preview**/
+@media (min-width: 768px) {
+    .preview{
+        overflow: hidden;
+    }
+    .preview img{
+        float: left;
+        width: 50%;
+        margin-right: 1.5rem;
+    }
+    .preview{
+        margin-bottom: 5rem;
+    }
 }
