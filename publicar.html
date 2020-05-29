@@ -60,15 +60,15 @@
                 <div class="subtitulo imagen-texto">
                     <label class="centrar-texto">Imagen Portada</label>
                 </div>
-                <label class="centrar-texto" for="imagen" id="boton-subir"><img src="Iconos/upload.png" alt="subir"></label>
-                <input type="file" id="imagen" name="imagen" value=""></input>
+                <label class="centrar-texto " for="imagen" id="boton-subir"><img src="Iconos/upload.png" alt="subir" id="subir"><p></p></label>
+                <input type="file" id="imagen" name="imagen" value="" required></input>
             </div>
             
             <div class="contenedor-titulo">
                 <div class="subtitulo">
                     <label class="centrar-texto" for="titulo">Título</label>
                 </div>
-                <input type="text" id="titulo">
+                <input type="text" id="titulo" required>
             </div>
 
             <div class="contenido-flexible contenedor-estilos">
@@ -90,12 +90,14 @@
                 </dl>
             </div>
 
-            <textarea name="contenido" id="contenido"  rows="30"></textarea>
+            <div>
+                <textarea name="contenido" id="contenido"  rows="30"></textarea>
+            </div>
 
             <div class="contenido-flexible botones">
                 <a href="index.html" class="boton">Cancelar</a>
                 <a href="preview.html" class="boton">Preview</a>
-                <input type="submit" value="Publicar" class="boton">
+                <input type="submit" value="Publicar" class="boton" id="submit">
             </div>
         </form>
         
@@ -121,5 +123,7 @@
             <p class="centrar-texto">Todos los Derechos Reservados a Jimy Cox</p>
         </div>
     </footer>
+    
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

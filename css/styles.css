@@ -744,3 +744,11 @@ form select:hover{
         margin-bottom: 5rem;
     }
 }
+
+/*Mesajes*/
+.error{
+    color: red;
+}
+.aprobado{
+    color: var(--color-principal);
+}
