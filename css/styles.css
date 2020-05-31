@@ -542,6 +542,10 @@ form input{
         margin-right: 1rem;
     }
 }
+.formulario-edicion{
+    overflow: hidden;
+    transition: all 0.1s;
+}
 .formulario-edicion > div{
     margin-bottom: 3rem;
 }
@@ -648,9 +652,9 @@ form select:hover{
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
-.seleccion-administracion{
+/*.seleccion-administracion{
     position: relative;
-}
+}*/
 
 .eliminar-administracion{
     position: absolute;
@@ -663,8 +667,8 @@ form select:hover{
     width: 6.463rem;
     height: 6.1rem;
 }
-.ocultar-administracion,
-.seleccion-administracion{
+.ocultar-administracion/*,
+.seleccion-administracion*/{
     position: absolute;
     width: 6.463rem;
     height: 6.1rem;
@@ -686,18 +690,38 @@ form select:hover{
     margin-top: 0.3rem;
     color: white;
 }
-.seleccion-administracion i{
+.seleccion-administracion{
+    position: relative;
+}
+.seleccion-administracion::after{
+    font-family: "Font Awesome\ 5 Pro";
+    position: absolute;
+    content: "\f00c";
+    font-size: 4.5rem;
+    color: white;
+    bottom: -3rem;
+    right: 1rem;
+
+    padding: 0.2rem 0.6rem;
+
+    border-radius: 50%;
+    background-color: #297AFF;
+}
+/*.seleccion-administracion i{
     font-size: 4.5rem;
     margin-left: 1rem;
     margin-top: 0.8rem;
     color: white;
-}
+}*/
 .eliminar-administracion:hover,
-.ocultar-administracion:hover,
-.seleccion-administracion:hover{
+.ocultar-administracion:hover/*,
+.seleccion-administracion:hover*/{
     background-color: #d1d1d1;
 }
-
+#ocultar_eliminar{
+    overflow: hidden;
+    transition: all 0.1s;
+}
 /*Preview*/
 .contenedor-muestra{
     width: 30rem;
@@ -751,4 +775,8 @@ form select:hover{
 }
 .aprobado{
     color: var(--color-principal);
+}
+
+textarea{
+    max-width: 100%;
 }
